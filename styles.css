@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper__all {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+}
+
+.wrapper__left {
+  background-color: #1e1a2e;
+  color: #fff;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.telegram_logo,
+.github-logo,
+.linkedin-logo,
+.email-logo {
+  width: 20px;
+}
+
+.contact-link {
+  color: #fff;
+}
+
+.proj-link {
+  display: block;
+}
+
+.wrapper__right {
+  padding: 20px;
+}
+.contacts {
+  list-style: none;
+}
+.contacts-list {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  /* align-content: center;
+  /* justify-content: space-around; */
+}
+.contacts-list img {
+  margin-right: 15px;
+}
+.contacts-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.contacts-item img {
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .wrapper__all {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper__right {
+    color: #1e1a2e;
+  }
+  .wrapper__left {
+  border-radius:  0 0 0 65px;
+  }
+  .main-title::after {
+    content: '';
+    width: calc(100% - 30px);
+    height: 5px;
+    background-color: #1e1a2e;
+    position: absolute;
+    bottom: -30px;
+    right: 2%;
+  }
+}
+
+.projectsAll{
+  list-style: none;
+  padding: 0;
+}
