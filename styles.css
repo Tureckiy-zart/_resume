@@ -81,7 +81,7 @@ a {
   margin-right: 15px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .wrapper__all {
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@ a {
     bottom: -30px;
     right: 2%;
   }
-}
+} */
 
 .projectsAll{
   list-style: none;
